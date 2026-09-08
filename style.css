@@ -10,8 +10,12 @@ body {
 }
 
 body h1 {
-    margin-left: 8rem;
-}
+    padding: 2rem 8rem;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    background-color: #174b57;
+    color: #fffaf0;
+}   
 
 a {
     text-decoration: none;  
@@ -132,3 +136,54 @@ footer .logo h1 {
     padding: 0;
     color: #636262;
 }
+
+
+.grupo-fotos {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+
+}
+
+.columna-chicos {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chico,
+.grande {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(247, 246, 246);
+}
+
+.chico {
+    flex: 1;
+    min-height: 20em;
+}
+
+.grande {
+    width: 60%;
+}
+
+.chico img,
+.chico video,
+.grande img,
+.grande video {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.grupo-fotos p {
+    margin: 0;
+    padding: 10px 8px;
+    font-weight: 600;
+}
+
+
